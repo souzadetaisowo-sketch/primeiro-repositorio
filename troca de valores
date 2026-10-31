@@ -1,0 +1,12 @@
+# Lê os valores das variáveis A e B
+A = input("Digite o valor de A: ")
+B = input("Digite o valor de B: ")
+
+# Exibe os valores antes da troca
+print(f"\nAntes da troca: A = {A} | B = {B}")
+
+# Realiza a troca dos valores de forma simultânea (Inversão)
+A, B = B, A
+
+# Exibe os valores após a troca
+print(f"Depois da troca: A = {A} | B = {B}")

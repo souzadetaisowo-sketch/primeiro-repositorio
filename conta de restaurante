@@ -1,0 +1,15 @@
+# Lê o valor original consumido na conta
+valor_consumo = float(input("Digite o valor da conta do restaurante (R$): "))
+
+# Calcula o valor da taxa de serviço (10%)
+taxa_servico = valor_consumo * 0.10
+
+# Calcula o valor total a ser pago
+valor_total = valor_consumo + taxa_servico
+
+# Exibe o detalhamento da conta formatado
+print("\n--- DETALHAMENTO DA CONTA ---")
+print(f"Valor do consumo: R$ {valor_consumo:.2f}")
+print(f"Taxa de serviço (10%): R$ {taxa_servico:.2f}")
+print(f"-----------------------------")
+print(f"VALOR TOTAL A PAGAR: R$ {valor_total:.2f}")

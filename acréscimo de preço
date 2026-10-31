@@ -1,0 +1,11 @@
+# Lê o preço original do produto e a porcentagem de acréscimo
+preco_original = float(input("Digite o preço do produto (R$): "))
+percentual_acrescimo = float(input("Digite a porcentagem de acréscimo (%): "))
+
+# Calcula o valor do acréscimo e o novo preço
+valor_acrescimo = preco_original * (percentual_acrescimo / 100)
+preco_final = preco_original + valor_acrescimo
+
+# Exibe os resultados formatados
+print(f"Valor do acréscimo: R$ {valor_acrescimo:.2f}")
+print(f"Novo preço com acréscimo: R$ {preco_final:.2f}")

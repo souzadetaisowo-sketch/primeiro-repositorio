@@ -1,0 +1,17 @@
+# Lê as informações da viagem, consumo e preço do combustível
+distancia = float(input("Digite a distância da viagem (km): "))
+consumo = float(input("Digite o consumo do veículo (km/l): "))
+preco_litro = float(input("Digite o preço do litro do combustível (R$): "))
+
+# Garante que o consumo seja maior que zero antes de calcular
+if consumo > 0:
+    # Calcula a quantidade de litros necessários e o custo total
+    litros_necessarios = distancia / consumo
+    custo_total = litros_necessarios * preco_litro
+
+    # Exibe os resultados formatados
+    print(f"\nResultados:")
+    print(f"Combustível necessário: {litros_necessarios:.2f} litros")
+    print(f"Custo total com combustível: R$ {custo_total:.2f}")
+else:
+    print("\nErro: O consumo do veículo deve ser maior que zero.")

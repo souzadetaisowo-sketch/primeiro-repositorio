@@ -1,0 +1,13 @@
+# Lê o valor em reais e a cotação atual do dólar
+valor_reais = float(input("Digite o valor em reais (R$): "))
+cotacao_dolar = float(input("Digite a cotação do dólar hoje (U$): "))
+
+# Garante que a cotação seja maior que zero antes de calcular
+if cotacao_dolar > 0:
+    # Divide os reais pela cotação para encontrar o valor em dólares
+    valor_dolares = valor_reais / cotacao_dolar
+    
+    # Exibe o resultado formatado com duas casas decimais
+    print(f"R$ {valor_reais:.2f} equivalem a U$ {valor_dolares:.2f}")
+else:
+    print("Erro: A cotação do dólar deve ser maior que zero.")

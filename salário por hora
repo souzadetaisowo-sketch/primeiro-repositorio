@@ -1,0 +1,9 @@
+# Lê a carga horária e o valor por hora trabalhada
+horas_trabalhadas = float(input("Digite a quantidade de horas trabalhadas: "))
+valor_hora = float(input("Digite o valor recebido por hora (R$): "))
+
+# Calcula o salário bruto total
+salario_bruto = horas_trabalhadas * valor_hora
+
+# Exibe o resultado formatado
+print(f"\nSalário Bruto Total: R$ {salario_bruto:.2f}")

@@ -1,0 +1,8 @@
+# Lê a temperatura em graus Celsius
+celsius = float(input("Digite a temperatura em Celsius (°C): "))
+
+# Aplica a fórmula de conversão: (C * 9/5) + 32
+fahrenheit = (celsius * 9 / 5) + 32
+
+# Exibe o resultado formatado
+print(f"{celsius:.1f}°C equivalem a {fahrenheit:.1f}°F")

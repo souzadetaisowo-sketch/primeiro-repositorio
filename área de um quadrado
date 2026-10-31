@@ -1,0 +1,8 @@
+# Lê o valor do lado do quadrado
+lado = float(input("Digite o valor do lado do quadrado: "))
+
+# Calcula a área (Lado elevado ao quadrado)
+area = lado ** 2
+
+# Exibe o resultado
+print(f"A área do quadrado é: {area}")

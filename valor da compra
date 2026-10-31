@@ -1,0 +1,25 @@
+# Lê as informações do Produto 1
+preco1 = float(input("Digite o preço do Produto 1 (R$): "))
+qtd1 = int(input("Digite a quantidade do Produto 1: "))
+
+# Lê as informações do Produto 2
+preco2 = float(input("Digite o preço do Produto 2 (R$): "))
+qtd2 = int(input("Digite a quantidade do Produto 2: "))
+
+# Lê as informações do Produto 3
+preco3 = float(input("Digite o preço do Produto 3 (R$): "))
+qtd3 = int(input("Digite a quantidade do Produto 3: "))
+
+# Calcula o subtotal de cada produto e o total geral
+subtotal1 = preco1 * qtd1
+subtotal2 = preco2 * qtd2
+subtotal3 = preco3 * qtd3
+total_compra = subtotal1 + subtotal2 + subtotal3
+
+# Exibe o resumo da compra
+print("\n--- RESUMO DA COMPRA ---")
+print(f"Produto 1: {qtd1}x R$ {preco1:.2f} = R$ {subtotal1:.2f}")
+print(f"Produto 2: {qtd2}x R$ {preco2:.2f} = R$ {subtotal2:.2f}")
+print(f"Produto 3: {qtd3}x R$ {preco3:.2f} = R$ {subtotal3:.2f}")
+print(f"------------------------")
+print(f"VALOR TOTAL: R$ {total_compra:.2f}")
